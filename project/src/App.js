@@ -4,6 +4,7 @@ import {Routes,Route} from "react-router-dom"
 import Home from "./Component/Home"
 import SingleMovie from './Component/SingleMovie';
 import Error from './Component/Error';
+import Movies from './Component/Movies';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         
         <Route path="/" element={<Home/>} />
+        <Route path="/movie" element={<Movies/>} />
 
         <Route path='/singleMpvies/:id' element={<SingleMovie/>}  />
         <Route path='*' element={<Error/>}  />
